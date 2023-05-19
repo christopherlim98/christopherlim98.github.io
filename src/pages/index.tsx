@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 import Loader from "./loader";
 
 const IndexPage: React.FC<PageProps> = () => {
-  const load = () => new Promise((resolve) => setTimeout(resolve, 4000)); // 2 seconds
+  const load = () => new Promise((resolve) => setTimeout(resolve, 3000)); // 2 seconds
 
   const [isLoading, setIsLoading] = React.useState<boolean>(true);
 

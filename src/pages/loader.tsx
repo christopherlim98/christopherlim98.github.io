@@ -79,12 +79,12 @@ const LOADERS: Array<Array<string>> = [
 ];
 
 export default function Loader() {
-  const load1 = () => new Promise((resolve) => setTimeout(resolve, 1000)); // 2 seconds
+  const load1 = () => new Promise((resolve) => setTimeout(resolve, 800)); // 2 seconds
 
-  const load2 = () => new Promise((resolve) => setTimeout(resolve, 1300)); // 2 seconds
-  const load3 = () => new Promise((resolve) => setTimeout(resolve, 2300)); // 2 seconds
-  const load4 = () => new Promise((resolve) => setTimeout(resolve, 2600)); // 2 seconds
-  const load5 = () => new Promise((resolve) => setTimeout(resolve, 3600)); // 2 seconds
+  const load2 = () => new Promise((resolve) => setTimeout(resolve, 1000)); // 2 seconds
+  const load3 = () => new Promise((resolve) => setTimeout(resolve, 1800)); // 2 seconds
+  const load4 = () => new Promise((resolve) => setTimeout(resolve, 2000)); // 2 seconds
+  const load5 = () => new Promise((resolve) => setTimeout(resolve, 2800)); // 2 seconds
   const [init, setInit] = React.useState<boolean>(false);
   const [hideFirst, setHideFirst] = React.useState<boolean>(false);
   const [hideNext, setHideNext] = React.useState<boolean>(false);
@@ -98,7 +98,6 @@ export default function Loader() {
   const [text1, setText1] = React.useState<string>("");
   const [text2, setText2] = React.useState<string>("");
   const [text3, setText3] = React.useState<string>("");
-  React.useEffect(() => {}, []);
   React.useEffect(() => {
     var seed = Math.floor(Math.random() * LOADERS.length) % LOADERS.length;
     setEmoji1(LOADERS[seed % LOADERS.length][0] ?? "🍞");
@@ -107,8 +106,9 @@ export default function Loader() {
     setText2(LOADERS[(seed + 1) % LOADERS.length][1] ?? "Popping popcorn");
     setEmoji3(LOADERS[(seed + 2) % LOADERS.length][0] ?? "✨");
     setText3(LOADERS[(seed + 2) % LOADERS.length][1] ?? "Making magic");
-    console.log(text3);
     setInit(true);
+  }, []);
+  React.useEffect(() => {
     load1().then(() => {
       setShowNext(true);
     });
@@ -128,7 +128,6 @@ export default function Loader() {
       setHideNext(true);
     });
   }, []);
-
   React.useEffect(() => {
     load5().then(() => {
       setShowNone(true);
