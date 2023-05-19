@@ -17,7 +17,10 @@ export default function Projects() {
       <div className="smu-capstone py-4">
         <div className="py-2">
           <div className="md:inline-flex font-extrabold">
-            <h2>Threat Detection for Government Commercial Cloud &emsp;</h2>
+            <h2>
+              Threat Detection for Government Commercial Cloud{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link
               href="https://www.palantir.com/platforms/gotham/"
               includeAt={true}
@@ -187,13 +190,19 @@ export default function Projects() {
       <div className="cmu-capstone py-4">
         <div className="py-2">
           <div className="hidden  md:inline-flex font-extrabold">
-            <h2>Stargate Representation Translation Layer &emsp;</h2>
+            <h2>
+              Stargate Representation Translation Layer{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link href="https://stargate.io/" includeAt={true}>
               <h2 className="inline">Datastax</h2>{" "}
             </Link>
           </div>
           <div className="inline md:hidden font-extrabold">
-            <h2>Stargate Repr. Translation Layer &emsp;</h2>
+            <h2>
+              Stargate Repr. Translation Layer{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link href="https://stargate.io/" includeAt={true}>
               <h2 className="inline">Datastax</h2>{" "}
             </Link>
@@ -289,7 +298,10 @@ export default function Projects() {
       <div className="petitions py-4">
         <div className="py-2">
           <div className="md:inline-flex font-extrabold">
-            <h2>Petitions (Hack for Public Good {"'"}22) &emsp;</h2>
+            <h2>
+              Petitions (Hack for Public Good {"'"}22){" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
 
             <Link href="https://www.open.gov.sg/" includeAt={true}>
               <h2 className="inline">Open Government Products</h2>{" "}
@@ -416,7 +428,10 @@ export default function Projects() {
       <div className="helloworld py-4">
         <div className="py-2">
           <div className="md:inline-flex font-extrabold">
-            <h2>HelloWorld (BrainHack {"'"}21) &emsp;</h2>
+            <h2>
+              HelloWorld (BrainHack {"'"}21){" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link href="https://www.open.gov.sg/" includeAt={true}>
               <h2 className="inline">DSTA Singapore</h2>{" "}
             </Link>
@@ -515,7 +530,10 @@ export default function Projects() {
       <div className="ryverbank py-4">
         <div className="py-2">
           <div className="md:inline-flex font-extrabold">
-            <h2>Ryverbank – Mock Banking API &emsp;</h2>
+            <h2>
+              Ryverbank – Mock Banking API{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link href="https://x.smu.edu.sg/" includeAt={true}>
               <h2 className="inline">SMU-X Project</h2>{" "}
             </Link>
@@ -594,7 +612,10 @@ export default function Projects() {
       <div className="copycat py-4">
         <div className="py-2">
           <div className="md:inline-flex font-extrabold">
-            <h2>Copycat – Source Code Plagiarism Detector &emsp;</h2>
+            <h2>
+              Copycat – Source Code Plagiarism Detector{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
           </div>
         </div>
         <ul className="list-disc list-inside font-medium">

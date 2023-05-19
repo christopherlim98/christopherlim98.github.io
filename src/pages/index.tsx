@@ -5,6 +5,7 @@ import AboutMe from "./about";
 import Work from "./work";
 import Projects from "./projects";
 import Education from "./education";
+import { Fade } from "react-awesome-reveal";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -16,13 +17,19 @@ const IndexPage: React.FC<PageProps> = () => {
         <AboutMe />
       </div>
       <div className="break-after-page md:pt-6 lg:pt-12">
-        <Education />
+        <Fade triggerOnce>
+          <Education />
+        </Fade>
       </div>
       <div className="break-after-page md:pt-6 lg:pt-12">
-        <Work />
+        <Fade triggerOnce>
+          <Work />
+        </Fade>
       </div>
       <div className="break-after-page md:pt-6 lg:pt-12">
-        <Projects />
+        <Fade triggerOnce>
+          <Projects />
+        </Fade>
       </div>
     </main>
   );

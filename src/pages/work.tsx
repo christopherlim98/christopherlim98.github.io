@@ -1,7 +1,6 @@
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import Link from "./link";
 import React from "react";
-import ImageWithTooltip from "./image_with_tooltip";
 import { Tooltip } from "@material-tailwind/react";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -19,7 +18,11 @@ export default function Work() {
         <div className="py-2">
           <h4> May 2023 - Aug 2023 </h4>
           <div className="md:inline-flex font-extrabold">
-            <h2> Software Engineer Intern &emsp;</h2>
+            <h2>
+              {" "}
+              Software Engineer Intern{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link
               href="https://www.palantir.com/platforms/gotham/"
               includeAt={true}
@@ -67,7 +70,11 @@ export default function Work() {
         <div className="py-2">
           <h4> May 2022 - Aug 2022 </h4>
           <div className="md:inline-flex font-extrabold">
-            <h2> Enterprise Software Engineer Intern &emsp;</h2>
+            <h2>
+              {" "}
+              Enterprise Software Engineer Intern{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link href="https://about.meta.com/" includeAt={true}>
               <h2 className="inline">Meta, Singapore </h2>{" "}
             </Link>
@@ -171,7 +178,11 @@ export default function Work() {
         <div className="py-2">
           <h4> Dec 2021 - May 2022 </h4>
           <div className="md:inline-flex font-extrabold">
-            <h2> Software Engineer Intern &emsp;</h2>
+            <h2>
+              {" "}
+              Software Engineer Intern{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link href="https://www.open.gov.sg/aboutus" includeAt={true}>
               <h2 className="inline md:hidden">OGP, GovTech Singapore </h2>{" "}
               <h2 className="hidden md:inline">
@@ -413,7 +424,11 @@ export default function Work() {
         <div className="py-2">
           <h4> May 2021 - Aug 2021 </h4>
           <div className="md:inline-flex font-extrabold">
-            <h2> Software Engineer Intern &emsp;</h2>
+            <h2>
+              {" "}
+              Software Engineer Intern{" "}
+              <span className="hidden md:inline-flex">&emsp;</span>
+            </h2>
             <Link
               href="https://www.ascendaloyalty.com/our-philosophy"
               includeAt={true}
