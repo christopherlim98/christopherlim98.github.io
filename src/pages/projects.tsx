@@ -177,7 +177,7 @@ export default function Projects() {
             >
               <div>
                 <StaticImage
-                  src="../images/azure-3.svg"
+                  src="../images/azure.svg"
                   alt="Azure"
                   width={40}
                   height={40}
