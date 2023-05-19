@@ -1,8 +1,6 @@
-"use client";
 import { FaGithub, FaNewspaper, FaReddit, FaYoutube } from "react-icons/fa";
 import Link from "./link";
 import React from "react";
-import ImageWithTooltip from "./image_with_tooltip";
 import { StaticImage } from "gatsby-plugin-image";
 import { Tooltip } from "@material-tailwind/react";
 
@@ -19,9 +17,7 @@ export default function Projects() {
       <div className="smu-capstone py-4">
         <div className="py-2">
           <div className="md:inline-flex font-extrabold">
-            <h2>
-              Advanced Threat Detection for Government Commercial Cloud &emsp;
-            </h2>
+            <h2>Threat Detection for Government Commercial Cloud &emsp;</h2>
             <Link
               href="https://www.palantir.com/platforms/gotham/"
               includeAt={true}

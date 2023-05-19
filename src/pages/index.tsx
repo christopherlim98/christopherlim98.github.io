@@ -8,7 +8,7 @@ import Education from "./education";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="grid px-4 md:px-24 lg:px-48">
+    <main className="grid px-4 md:px-24 lg:px-48 max-w-screen-2xl mx-auto">
       <div className="h-screen flex">
         <Welcome />
       </div>

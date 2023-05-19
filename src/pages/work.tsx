@@ -173,7 +173,7 @@ export default function Work() {
           <div className="md:inline-flex font-extrabold">
             <h2> Software Engineer Intern &emsp;</h2>
             <Link href="https://www.open.gov.sg/aboutus" includeAt={true}>
-              <h2 className="inline md:hidden">OGP, Govtech Singapore </h2>{" "}
+              <h2 className="inline md:hidden">OGP, GovTech Singapore </h2>{" "}
               <h2 className="hidden md:inline">
                 Open Government Products, Govtech Singapore{" "}
               </h2>{" "}
