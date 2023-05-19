@@ -4,17 +4,26 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: #f6f4e8;
+  --background-end-rgb: #f6f4e8;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 30, 41, 59;
+    --background-end-rgb: 30, 41, 59;
   }
 }
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-end-rgb);
+   background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
 
 @layer base {
   h1 {
@@ -27,21 +36,17 @@
     @apply text-lg dark:text-white;
   }
   h4 {
-    @apply text-xl dark:text-white text-gray-600;
+    @apply text-xl text-gray-600 dark:text-white;
   }
   a {
     @apply underline;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  text {
+    @apply dark:text-white;
+  }
+  body {
+    @apply bg-yellow-50 text-[#313030] dark:bg-slate-800;
+  }
 }
 
 iframe {
@@ -67,8 +72,6 @@ html {
 }
 
 body {
-  background: #f6f4e8;
-  color: #313030;
   font-family: "soleil", Helvetica, sans-serif;
 }
 
@@ -202,7 +205,6 @@ body {
   }
 }
 .loader {
-  background: #f6f4e8;
   width: 400px;
   position: fixed;
   top: 50%;
@@ -257,4 +259,13 @@ body {
   animation-timing-function: cubic-bezier(0.58, -0.23, 0.3, 1.3);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+@media (prefers-color-scheme: dark) {
+  .loader .text {
+    line-height: 1;
+    color: #dfcaaf;
+    font-size: 20px;
+    margin-right: -14px;
+  }
 }

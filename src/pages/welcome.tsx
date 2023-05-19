@@ -4,17 +4,15 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Welcome() {
   return (
-    // I build for impact.
-    // <main className="flex min-h-screen flex-col justify-between p-12 md:p-64">
     <div className="my-auto md:w-8/12">
-      <Fade cascade damping={0.05} triggerOnce>
-        <h1>
-          Hi <div className="inline-block animate-wave-hand">👋</div> , I'm
-          Chris 🧑🏻‍💻{" "}
-        </h1>
-        <h1>and I love building</h1>
-        <h1>impactful software 🚀</h1>
-      </Fade>
+      {/* <Fade cascade damping={0.05} triggerOnce> */}
+      <h1>
+        Hi <div className="inline-block animate-wave-hand">👋</div> , I'm Chris
+        🧑🏻‍💻{" "}
+      </h1>
+      <h1>and I love building</h1>
+      <h1>impactful software 🚀</h1>
+      {/* </Fade> */}
       <Slide direction="up" delay={100} triggerOnce>
         <h2 className="py-4">
           {" "}

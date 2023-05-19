@@ -6,7 +6,6 @@ import Work from "./work";
 import Projects from "./projects";
 import Education from "./education";
 import { Fade } from "react-awesome-reveal";
-import { Pulsar } from "@uiball/loaders";
 import Loader from "./loader";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -23,16 +22,10 @@ const IndexPage: React.FC<PageProps> = () => {
     <main className="grid px-4 md:px-24 lg:px-48 max-w-screen-2xl mx-auto">
       <Fade className={`spinner ${isLoading ? "block" : "hidden"}`}>
         <div className="grid h-screen place-items-center">
-          {/* <Pulsar size={40} speed={1.5} color="black" /> */}
           <Loader />
         </div>
       </Fade>
-      {/* <div className={`${isShown ? "isShown" : "hidden"}`}> */}
-      <div
-        className={`${
-          isLoading ? "opacity-0 delay-0" : "opacity-100 delay-100"
-        }`}
-      >
+      <div className={`${isLoading ? "hidden" : "block"}`}>
         <div className="h-screen flex">
           <Welcome />
         </div>
@@ -55,7 +48,6 @@ const IndexPage: React.FC<PageProps> = () => {
           </Fade>
         </div>{" "}
       </div>
-      {/* </div> */}
     </main>
   );
 };

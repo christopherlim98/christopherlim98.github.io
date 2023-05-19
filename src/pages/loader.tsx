@@ -1,7 +1,5 @@
 import * as React from "react";
-// var LOADER_CONTAINER = $("#loader");
-// var LOADER_INTERVAL = 1600;
-var LOADERS = [
+const LOADERS: Array<Array<string>> = [
   ["🌶", "Dicing peppers"],
   ["🔪", "Sharpening knives"],
   ["👩🏽‍🍳", "Starching aprons"],
@@ -73,7 +71,6 @@ var LOADERS = [
   ["🤞🏾", "Crossing fingers"],
   ["👊🏿", "Bumping fists"],
   ["☝🏽", "Throwing in one last thing"],
-  ["😙👌", "Doing that Italian chef thing"],
   ["👃🏻", "Smellin’ smells"],
   ["🍹", "Mixing drinks"],
   ["✨", "Making magic"],
@@ -82,100 +79,111 @@ var LOADERS = [
 ];
 
 export default function Loader() {
-  const load1 = () => new Promise((resolve) => setTimeout(resolve, 1300)); // 2 seconds
-  const load2 = () => new Promise((resolve) => setTimeout(resolve, 2600)); // 2 seconds
-  const load3 = () => new Promise((resolve) => setTimeout(resolve, 3900)); // 2 seconds
+  const load1 = () => new Promise((resolve) => setTimeout(resolve, 1000)); // 2 seconds
 
+  const load2 = () => new Promise((resolve) => setTimeout(resolve, 1300)); // 2 seconds
+  const load3 = () => new Promise((resolve) => setTimeout(resolve, 2300)); // 2 seconds
+  const load4 = () => new Promise((resolve) => setTimeout(resolve, 2600)); // 2 seconds
+  const load5 = () => new Promise((resolve) => setTimeout(resolve, 3600)); // 2 seconds
+  const [init, setInit] = React.useState<boolean>(false);
+  const [hideFirst, setHideFirst] = React.useState<boolean>(false);
+  const [hideNext, setHideNext] = React.useState<boolean>(false);
   const [showNext, setShowNext] = React.useState<boolean>(false);
   const [showLast, setShowLast] = React.useState<boolean>(false);
   const [showNone, setShowNone] = React.useState<boolean>(false);
+
+  const [emoji1, setEmoji1] = React.useState<string>("");
+  const [emoji2, setEmoji2] = React.useState<string>("");
+  const [emoji3, setEmoji3] = React.useState<string>("");
+  const [text1, setText1] = React.useState<string>("");
+  const [text2, setText2] = React.useState<string>("");
+  const [text3, setText3] = React.useState<string>("");
+  React.useEffect(() => {}, []);
   React.useEffect(() => {
+    var seed = Math.floor(Math.random() * LOADERS.length) % LOADERS.length;
+    setEmoji1(LOADERS[seed % LOADERS.length][0] ?? "🍞");
+    setText1(LOADERS[seed % LOADERS.length][1] ?? "Baking bread");
+    setEmoji2(LOADERS[(seed + 1) % LOADERS.length][0] ?? "🍿");
+    setText2(LOADERS[(seed + 1) % LOADERS.length][1] ?? "Popping popcorn");
+    setEmoji3(LOADERS[(seed + 2) % LOADERS.length][0] ?? "✨");
+    setText3(LOADERS[(seed + 2) % LOADERS.length][1] ?? "Making magic");
+    console.log(text3);
+    setInit(true);
     load1().then(() => {
       setShowNext(true);
-      console.log(showNext);
     });
   }, []);
   React.useEffect(() => {
     load2().then(() => {
-      // setShowNext(false);
-      setShowLast(true);
+      setHideFirst(true);
     });
   }, []);
   React.useEffect(() => {
     load3().then(() => {
-      // setShowNext(false);
+      setShowLast(true);
+    });
+  }, []);
+  React.useEffect(() => {
+    load4().then(() => {
+      setHideNext(true);
+    });
+  }, []);
+
+  React.useEffect(() => {
+    load5().then(() => {
       setShowNone(true);
     });
   }, []);
   return (
     <div className="loader">
-      <div
-        className={`emoji  ${
-          showNext || showLast ? "animateOut hidden delay-300" : "block"
-        }`}
-      >
-        🍹
+      <div className={`${hideFirst ? "hidden" : ""}`}>
+        <div
+          className={`emoji ${init ? "visible" : "hidden"} ${
+            showNext || showLast ? "animateOut" : "block"
+          }`}
+        >
+          {emoji1}
+        </div>
+        <div
+          className={`text ${init ? "visible" : "hidden"} ${
+            showNext || showLast ? "animateOut" : "block"
+          }`}
+        >
+          {text1}
+        </div>
       </div>
-      <div
-        className={`text  ${
-          showNext || showLast ? "animateOut hidden delay-300" : "block"
-        }`}
-      >
-        Mixing drink
+      <div className={`${hideNext ? "hidden" : ""}`}>
+        <div
+          className={`emoji  ${hideFirst ? "visible" : "hidden"} ${
+            showLast ? "animateOut " : ""
+          }`}
+        >
+          {emoji2}
+        </div>
+        <div
+          className={`text ${hideFirst ? "visible" : "hidden"} ${
+            showLast ? "animateOut " : ""
+          }`}
+        >
+          {text2}
+        </div>
       </div>
-      <div
-        className={`emoji ${
-          showNext ? "visible delay-300" : "hidden delay-0"
-        } ${showLast ? "animateOut hidden delay-300" : ""}`}
-      >
-        🍱
-      </div>
-      <div
-        className={`text ${showNext ? "visible delay-300" : "hidden delay-0"} ${
-          showLast ? "animateOut hidden delay-300" : ""
-        }`}
-      >
-        Boxing bento
-      </div>
-      <div
-        className={`emoji ${
-          showLast ? "visible delay-300" : "hidden delay-0"
-        } ${showNone ? "animateOut hidden delay-300" : ""}`}
-      >
-        ✨
-      </div>
-      <div
-        className={`text ${showLast ? "visible delay-300" : "hidden delay-0"} ${
-          showNone ? "animateOut hidden delay-300" : ""
-        }`}
-      >
-        Making magic
+      <div className={`${showNone ? "hidden" : ""}`}>
+        <div
+          className={`emoji ${hideNext ? "visible" : "hidden"} ${
+            showNone ? "animateOut " : ""
+          }`}
+        >
+          {emoji3}
+        </div>
+        <div
+          className={`text ${hideNext ? "visible" : "hidden"} ${
+            showNone ? "animateOut " : ""
+          }`}
+        >
+          {text3}
+        </div>
       </div>
     </div>
   );
 }
-
-// $(document).ready(function () {
-//   var cycleLoader = function () {
-//     var index = Math.floor(Math.random() * LOADERS.length);
-//     var selected = LOADERS[index];
-//     var selectedEmoji = selected[0];
-//     var selectedText = selected[1];
-
-//     // First transition out the old loader
-//     setTimeout(function () {
-//       LOADER_CONTAINER.children().addClass("animateOut hidden delay-300");
-//     }, LOADER_INTERVAL - 300); // This negative value should be the same as $animation-duration in the CSS
-
-//     // Then remove the animated out divs
-//     LOADER_CONTAINER.children(".emoji").last().remove();
-//     LOADER_CONTAINER.children(".text").last().remove();
-
-//     // Then animate in the new one
-//     LOADER_CONTAINER.append('<div class="emoji">' + selectedEmoji + "</div>");
-//     LOADER_CONTAINER.append('<div class="text">' + selectedText + "</div>");
-//   };
-
-//   setInterval(cycleLoader, LOADER_INTERVAL);
-//   cycleLoader(); // Run first time without delay
-// });
