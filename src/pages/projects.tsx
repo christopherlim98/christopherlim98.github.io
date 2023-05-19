@@ -3,6 +3,8 @@ import { FaGithub, FaNewspaper, FaReddit, FaYoutube } from "react-icons/fa";
 import Link from "./link";
 import React from "react";
 import ImageWithTooltip from "./image_with_tooltip";
+import { StaticImage } from "gatsby-plugin-image";
+import { Tooltip } from "@material-tailwind/react";
 
 export default function Projects() {
   return (
@@ -56,43 +58,133 @@ export default function Projects() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/gh_actions_blue.svg"
-              tooltipText="Github Actions"
-            />
-            <ImageWithTooltip
-              src="/static/skills/serverless.svg"
-              tooltipText="Serverless"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws_sagemaker.svg"
-              tooltipText="AWS Sagemaker"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws_s3.svg"
-              tooltipText="AWS S3"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws_lambda.svg"
-              tooltipText="AWS Lambda"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws_glue.svg"
-              tooltipText="AWS Glue"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws_sns.svg"
-              tooltipText="AWS SNS"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws_step.svg"
-              tooltipText="AWS Step Function"
-            />
-            <ImageWithTooltip
-              src="/static/skills/azure.svg"
-              tooltipText="Azure"
-            />{" "}
-            <ImageWithTooltip src="/static/skills/gcp.svg" tooltipText="GCP" />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Github Actions"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/gh_actions_blue.svg"
+                  alt="Github Actions"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Serverless"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/serverless.svg"
+                  alt="Serverless"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="AWS Sagemaker"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/aws_sagemaker.svg"
+                  alt="AWS Sagemaker"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="AWS Lambda"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/aws_lambda.svg"
+                  alt="AWS Lambda"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="AWS Glue"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/aws_glue.svg"
+                  alt="AWS Glue"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="AWS SNS"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/aws_sns.svg"
+                  alt="AWS SNS"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="AWS Step Functions"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/aws_step.svg"
+                  alt="AWS Step Functions"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="GCP"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/gcp.svg"
+                  alt="GCP"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>{" "}
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Azure"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/azure-3.svg"
+                  alt="Azure"
+                  width={40}
+                  height={40}
+                  quality={100}
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
       </div>
@@ -143,18 +235,48 @@ export default function Projects() {
             <div className="techstack pb-4">
               <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
               <div className="flex gap-1 flex-wrap">
-                <ImageWithTooltip
-                  src="/static/skills/java.svg"
-                  tooltipText="Java"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/python.svg"
-                  tooltipText="Python"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/docker.svg"
-                  tooltipText="Docker"
-                />
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="Java"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/java.svg"
+                      alt="Java"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="Python"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/python.svg"
+                      alt="Python"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="Docker"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/docker.svg"
+                      alt="Docker"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -221,22 +343,62 @@ export default function Projects() {
             <div className="techstack pb-4">
               <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
               <div className="flex gap-1 flex-wrap">
-                <ImageWithTooltip
-                  src="/static/skills/typescript.svg"
-                  tooltipText="Typescript"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/react.svg"
-                  tooltipText="React"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/mysql.svg"
-                  tooltipText="MySQL"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/docker.svg"
-                  tooltipText="Docker"
-                />
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="Typescript"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/typescript.svg"
+                      alt="Typescript"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="Docker"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/docker.svg"
+                      alt="Docker"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="React"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/react.svg"
+                      alt="React"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="MySQL"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/mysql.svg"
+                      alt="MySQL"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -295,18 +457,48 @@ export default function Projects() {
             <div className="techstack pb-4">
               <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
               <div className="flex gap-1 flex-wrap">
-                <ImageWithTooltip
-                  src="/static/skills/typescript.svg"
-                  tooltipText="Typescript"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/react_native.png"
-                  tooltipText="React Native"
-                />
-                <ImageWithTooltip
-                  src="/static/skills/java.svg"
-                  tooltipText="Java"
-                />
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="TypeScript"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/typescript.svg"
+                      alt="TypeScript"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="React Native"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/react_native.png"
+                      alt="React Native"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
+                <Tooltip
+                  className="rounded bg-gray-700 text-gray-100 px-4"
+                  content="Java"
+                  placement="bottom"
+                >
+                  <div>
+                    <StaticImage
+                      src="../images/java.svg"
+                      alt="Java"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -358,18 +550,48 @@ export default function Projects() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/java.svg"
-              tooltipText="Java"
-            />
-            <ImageWithTooltip
-              src="/static/skills/docker.svg"
-              tooltipText="Docker"
-            />
-            <ImageWithTooltip
-              src="/static/skills/springio.svg"
-              tooltipText="Spring"
-            />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Java"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/java.svg"
+                  alt="Java"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Docker"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/docker.svg"
+                  alt="Docker"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Spring"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/springio.svg"
+                  alt="Spring"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
       </div>
@@ -417,10 +639,20 @@ export default function Projects() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/java.svg"
-              tooltipText="Java"
-            />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Java"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/java.svg"
+                  alt="Java"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
       </div>

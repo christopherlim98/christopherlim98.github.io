@@ -2,6 +2,8 @@ import { FaGithub, FaYoutube } from "react-icons/fa";
 import Link from "./link";
 import React from "react";
 import ImageWithTooltip from "./image_with_tooltip";
+import { Tooltip } from "@material-tailwind/react";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Work() {
   return (
@@ -44,10 +46,20 @@ export default function Work() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/java.svg"
-              tooltipText="Java"
-            />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Java"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/java.svg"
+                  alt="Java"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
       </div>
@@ -82,26 +94,76 @@ export default function Work() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/react.svg"
-              tooltipText="React"
-            />
-            <ImageWithTooltip
-              src="/static/skills/redux.svg"
-              tooltipText="Redux"
-            />
-            <ImageWithTooltip
-              src="/static/skills/hack-2.svg"
-              tooltipText="Hack"
-            />
-            <ImageWithTooltip
-              src="/static/skills/flow-2.svg"
-              tooltipText="Flow"
-            />
-            <ImageWithTooltip
-              src="/static/skills/graphql.svg"
-              tooltipText="GraphQL"
-            />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="React"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/react.svg"
+                  alt="React"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>{" "}
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Redux"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/redux.svg"
+                  alt="Redux"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Hack"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/hack-2.svg"
+                  alt="Hack"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Flow"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/flow-2.svg"
+                  alt="Flow"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="GraphQL"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/graphql.svg"
+                  alt="GraphQL"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
       </div>
@@ -173,51 +235,175 @@ export default function Work() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/typescript.svg"
-              tooltipText="TypeScript"
-            />
-            <ImageWithTooltip
-              src="/static/skills/javascript.svg"
-              tooltipText="JavaScript"
-            />
-            <ImageWithTooltip
-              src="/static/skills/nodejs.svg"
-              tooltipText="Node"
-            />
-            <ImageWithTooltip
-              src="/static/skills/python.svg"
-              tooltipText="Python"
-            />
-            <ImageWithTooltip
-              src="/static/skills/scikit_learn.svg"
-              tooltipText="Scikit Learn"
-            />
-            <ImageWithTooltip
-              src="/static/skills/aws-b.svg"
-              tooltipText="AWS"
-            />
-            <ImageWithTooltip
-              src="/static/skills/docker.svg"
-              tooltipText="Docker"
-            />
-            <ImageWithTooltip
-              src="/static/skills/react.svg"
-              tooltipText="React"
-            />
-            <ImageWithTooltip
-              src="/static/skills/mysql.svg"
-              tooltipText="MySQL"
-            />
-            <ImageWithTooltip src="/static/skills/npm.svg" tooltipText="Npm" />
-            <ImageWithTooltip
-              src="/static/skills/chakraui.svg"
-              tooltipText="Chakra UI"
-            />
-            <ImageWithTooltip
-              src="/static/skills/storybookjs.svg"
-              tooltipText="StorybookJS"
-            />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Typescript"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/typescript.svg"
+                  alt="Typescript"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Javascript"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/javascript.svg"
+                  alt="Javascript"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="NodeJS"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/nodejs.svg"
+                  alt="NodeJS"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Python"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/python.svg"
+                  alt="Python"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Scikit Learn"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/scikit_learn.svg"
+                  alt="Scikit Learn"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="AWS"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/aws.svg"
+                  alt="AWS"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Docker"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/docker.svg"
+                  alt="Docker"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="React"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/react.svg"
+                  alt="React"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="MySQL"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/mysql.svg"
+                  alt="MySQL"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="NPM"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/npm.svg"
+                  alt="NPM"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Chakra UI"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/chakraui.svg"
+                  alt="Chakra UI"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="StorybookJS"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/storybookjs.svg"
+                  alt="StorybookJS"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
 
             {/* Javascript, Typescript, React, Nodejs, Expressjs, MySQL, Chakra UI, StorybookJSt */}
           </div>
@@ -255,22 +441,62 @@ export default function Work() {
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
           <div className="flex gap-1 flex-wrap">
-            <ImageWithTooltip
-              src="/static/skills/javascript.svg"
-              tooltipText="JavaScript"
-            />
-            <ImageWithTooltip
-              src="/static/skills/ruby.svg"
-              tooltipText="Ruby"
-            />
-            <ImageWithTooltip
-              src="/static/skills/rails.svg"
-              tooltipText="Ruby on Rails"
-            />
-            <ImageWithTooltip
-              src="/static/skills/angular.svg"
-              tooltipText="Angular"
-            />
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Javascript"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/javascript.svg"
+                  alt="Javascript"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Ruby"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/ruby.svg"
+                  alt="Ruby"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Ruby On Rails"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/rails.svg"
+                  alt="Ruby On Rails"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
+            <Tooltip
+              className="rounded bg-gray-700 text-gray-100 px-4"
+              content="Angular"
+              placement="bottom"
+            >
+              <div>
+                <StaticImage
+                  src="../images/angular.svg"
+                  alt="Angular"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
       </div>
