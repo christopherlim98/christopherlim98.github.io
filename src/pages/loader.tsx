@@ -80,7 +80,6 @@ const LOADERS: Array<Array<string>> = [
 
 export default function Loader() {
   const load1 = () => new Promise((resolve) => setTimeout(resolve, 800)); // 2 seconds
-
   const load2 = () => new Promise((resolve) => setTimeout(resolve, 1000)); // 2 seconds
   const load3 = () => new Promise((resolve) => setTimeout(resolve, 1800)); // 2 seconds
   const load4 = () => new Promise((resolve) => setTimeout(resolve, 2000)); // 2 seconds

@@ -41,11 +41,8 @@
   a {
     @apply underline;
   }
-  text {
-    @apply dark:text-white;
-  }
   body {
-    @apply bg-yellow-50 text-[#313030] dark:bg-slate-800;
+    @apply bg-yellow-50 text-[#313030] dark:bg-slate-800 dark:text-white;
   }
 }
 
@@ -72,6 +69,7 @@ html {
 }
 
 body {
+  color: rgb(var(--foreground-rgb));
   font-family: "soleil", Helvetica, sans-serif;
 }
 
