@@ -24,16 +24,16 @@ export default function Education() {
           <div>
             <p>Computer Systems:</p>
             <ul className="list-disc list-outside mx-4">
-              <li>15-213/513 Introduction to Computer Systems</li>
-              <li>15-440/640 Distributed Systems</li>
-              <li>15-445/645 Database Systems </li>
+              <li>15-513 Introduction to Computer Systems</li>
+              <li>15-640 Distributed Systems</li>
+              <li>15-645 Database Systems </li>
               <li>15-719 Advanced Cloud Computing </li>
             </ul>
           </div>
           <div>
             <p>AI/ML: </p>
             <ul className="list-disc list-outside mx-4">
-              <li>10-301/601 Machine Learning</li>
+              <li>10-601 Machine Learning</li>
               <li>11-637 Foundations of Computational Data Science</li>
               <li>05-839 Interactive Data Science</li>
               <li>11-631 Data Science Seminar</li>
