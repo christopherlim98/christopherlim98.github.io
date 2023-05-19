@@ -1,12 +1,12 @@
 import { Tooltip } from "@material-tailwind/react";
 import Link from "./link";
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 export default function AboutMe() {
   return (
     <div className="lg:grid lg:grid-cols-2 lg:gap-4 w-full md:w-8/12 lg:w-full">
-      <Slide direction="left" triggerOnce>
+      <Zoom direction="left" triggerOnce>
         <div>
           <h1 className="py-8">
             🙋‍♂️
@@ -41,10 +41,10 @@ export default function AboutMe() {
             .
           </h2>
         </div>
-      </Slide>
+      </Zoom>
 
       <div className="hidden rounded lg:block">
-        <Slide className="h-full" direction="right" triggerOnce>
+        <Zoom className="h-full" direction="right" triggerOnce>
           <Tooltip
             className="rounded bg-gray-700 text-gray-100 px-4"
             content="Scroll to learn more about my hackathon projects"
@@ -56,7 +56,7 @@ export default function AboutMe() {
               height="100%"
             ></iframe>
           </Tooltip>
-        </Slide>
+        </Zoom>
       </div>
     </div>
   );
