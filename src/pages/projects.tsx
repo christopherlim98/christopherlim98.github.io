@@ -314,7 +314,7 @@ export default function Projects() {
               <h3 className="inline">
                 <li className="my-1">
                   Designed and engineered a system for privacy-preserving
-                  petitions to allows citizens to cast verified yet anonymous
+                  petitions that allows citizens to cast verified yet anonymous
                   votes.
                 </li>
               </h3>
