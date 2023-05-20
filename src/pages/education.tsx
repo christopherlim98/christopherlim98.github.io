@@ -14,29 +14,45 @@ export default function Education() {
         <div className="py-4">
           {" "}
           <h2 className="font-extrabold">Carnegie Mellon University </h2>
-          <h3>Masters In Computational Data Science (Computer Systems)</h3>
-          <h3>
+          <h4>Masters In Computational Data Science (Computer Systems)</h4>
+          <h4>
             GPA: <span className="underline">4.0/4.0</span>
-          </h3>
+          </h4>
         </div>
-        <p className="font-bold">Selected Coursework</p>
+        <h3 className="font-bold">Selected Coursework</h3>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <p>Computer Systems:</p>
+            <h3>Computer Systems:</h3>
             <ul className="list-disc list-outside mx-4">
-              <li>15-513 Introduction to Computer Systems</li>
-              <li>15-640 Distributed Systems</li>
-              <li>15-645 Database Systems </li>
-              <li>15-719 Advanced Cloud Computing </li>
+              <h3>
+                <li>15-513 Introduction to Computer Systems</li>
+              </h3>
+              <h3>
+                <li>15-640 Distributed Systems</li>
+              </h3>
+              <h3>
+                <li>15-645 Database Systems </li>
+              </h3>
+              <h3>
+                <li>15-719 Advanced Cloud Computing </li>
+              </h3>
             </ul>
           </div>
           <div>
-            <p>AI/ML: </p>
+            <h3>AI/ML: </h3>
             <ul className="list-disc list-outside mx-4">
-              <li>10-601 Machine Learning</li>
-              <li>11-637 Foundations of Computational Data Science</li>
-              <li>05-839 Interactive Data Science</li>
-              <li>11-631 Data Science Seminar</li>
+              <h3>
+                <li>10-601 Machine Learning</li>
+              </h3>
+              <h3>
+                <li>11-637 Foundations of Computational Data Science</li>
+              </h3>
+              <h3>
+                <li>05-839 Interactive Data Science</li>
+              </h3>
+              <h3>
+                <li>11-631 Data Science Seminar</li>
+              </h3>
             </ul>
           </div>
         </div>
@@ -45,19 +61,27 @@ export default function Education() {
         <div className="py-4">
           {" "}
           <h2 className="font-extrabold">Singapore Management University </h2>
-          <h3>Bachelors in Computer Science (Artificial Intelligence)</h3>
-          <h3>
+          <h4>Bachelors in Computer Science (Artificial Intelligence)</h4>
+          <h4>
             GPA: <span className="underline">4.0/4.0</span>
-          </h3>
+          </h4>
         </div>
-        <p className="font-bold">Selected Coursework</p>
+        <h3 className="font-bold">Selected Coursework</h3>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <ul className="list-disc list-outside mx-4">
-              <li>Deep Learning and Vision (PhD)</li>
-              <li>Natural Language Communication</li>
-              <li>Operating Systems with Android</li>
-              <li>Computer Hardware and Embedded Systems</li>
+              <h3>
+                <li>Deep Learning and Vision (PhD)</li>
+              </h3>
+              <h3>
+                <li>Natural Language Communication</li>
+              </h3>
+              <h3>
+                <li>Operating Systems with Android</li>
+              </h3>
+              <h3>
+                <li>Computer Hardware and Embedded Systems</li>
+              </h3>
             </ul>
           </div>
         </div>
