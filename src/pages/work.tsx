@@ -35,8 +35,8 @@ export default function Work() {
           <h3 className="inline">
             <li className="my-1">
               {" "}
-              Backend on Video & Sensor Inference Platform team. 
-              <Link href="https://blog.palantir.com/edge-ai-in-space-93d793433a1e">Read Medium article about Palantir Edge AI in Space</Link> 
+              Backend on Video & Sensor Inference Platform team. Read about{" "}
+              <Link href="https://blog.palantir.com/edge-ai-in-space-93d793433a1e"> Palantir Edge AI in Space.</Link> 
             </li>
           </h3>
           <h3 className="inline">
