@@ -35,14 +35,15 @@ export default function Work() {
           <h3 className="inline">
             <li className="my-1">
               {" "}
-              🚧 Currently in progress, stay tuned for updates!
+              Backend on Video & Sensor Inference Platform team. 
+              <Link href="https://blog.palantir.com/edge-ai-in-space-93d793433a1e">Read Medium article about Palantir Edge AI in Space</Link> 
             </li>
           </h3>
           <h3 className="inline">
             <li className="my-1">
               {" "}
-              Working on the Gotham product – a commercially available, AI-ready
-              operating system for public sector.
+              Designed and implemented metrics collection system for improving 
+              deployment visibility across distributed systems (Java, Kubernetes, GRPC).
             </li>
           </h3>
         </ul>
