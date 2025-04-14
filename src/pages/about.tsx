@@ -46,7 +46,7 @@ export default function AboutMe() {
         <AboutMeBlock />
       </div>
 
-      <div className="hidden rounded lg:block">
+{/*       <div className="hidden rounded lg:block">
         <Zoom className="h-full" direction="right" triggerOnce>
           <Tooltip
             className="rounded bg-gray-700 text-gray-100 px-4"
@@ -60,7 +60,7 @@ export default function AboutMe() {
             ></iframe>
           </Tooltip>
         </Zoom>
-      </div>
+      </div> */}
     </div>
   );
 }
