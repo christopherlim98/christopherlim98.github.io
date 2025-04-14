@@ -16,8 +16,8 @@ export default function Welcome() {
       <Slide direction="up" delay={100} triggerOnce>
         <h2 className="py-4">
           {" "}
-          I am currently pursuing a Master’s in Computational Data Science @CMU,
-          with a concentration in Computer Systems.
+          I am currently working as a full-time Software Engineer at Palantir Technologies. I graduated from Carnegie Mellon University with a Master’s in Computational Data Science 
+          and a concentration in Computer Systems.
         </h2>
         <h2 className="py-4">
           I have experience working on high-impact problems for public sector{" "}
