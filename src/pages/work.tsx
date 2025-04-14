@@ -20,7 +20,7 @@ export default function Work() {
           <div className="md:inline-flex font-extrabold">
             <h2>
               {" "}
-              Software Engineer Intern{" "}
+              Software Engineer{" "}
               <span className="hidden md:inline-flex">&emsp;</span>
             </h2>
             <Link
@@ -35,17 +35,30 @@ export default function Work() {
           <h3 className="inline">
             <li className="my-1">
               {" "}
-              Backend on Video & Sensor Inference Platform team. Read about{" "}
-              <Link href="https://blog.palantir.com/edge-ai-in-space-93d793433a1e"> Palantir Edge AI in Space.</Link> 
+              Fullstack on Pipeline Builder (EdgeX). Read about{" "}
+              <Link href="https://www.cnbc.com/2025/03/07/palantir-delivers-first-two-ai-enabled-systems-to-us-army.html"> Palantir in the U.S. Army.</Link> 
             </li>
           </h3>
           <h3 className="inline">
             <li className="my-1">
               {" "}
+              Past: Backend on Media Sets (EdgeX).
+            </li>
+          </h3>
+          <h3 className="inline">
+            <li className="my-1">
+              {" "}
+              Past: Internship on Video & Sensor Inference Platform team. Read about{" "}
+              <Link href="https://blog.palantir.com/edge-ai-in-space-93d793433a1e"> Palantir Edge AI in Space.</Link> 
+            </li>
+          </h3>
+          {/* <h3 className="inline">
+            <li className="my-1">
+              {" "}
               Designed and implemented metrics collection system for improving 
               deployment visibility across distributed systems (Java, Kubernetes, GRPC).
             </li>
-          </h3>
+          </h3> */}
         </ul>
         <div className="techstack pb-4">
           <h4 className="font-semibold py-2 text-lg">Tech stack:</h4>
