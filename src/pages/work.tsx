@@ -16,7 +16,7 @@ export default function Work() {
       </h1>
       <div className="Palantir py-4">
         <div className="py-2">
-          <h4> May 2023 - Aug 2023 </h4>
+          <h4> May 2023 - Present </h4>
           <div className="md:inline-flex font-extrabold">
             <h2>
               {" "}
